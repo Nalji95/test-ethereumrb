@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- A simple Solidy Smart Contract interraction (Greeting.sol)
+- Use truffle to deploy the contract
+- copy the ABI in the truffle artifacts and use it as variable in contract.rake file
+- edit contract.rake and run the command rake contrac:deploy
