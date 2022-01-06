@@ -42,10 +42,9 @@ namespace :contract do
 
       address = '0x6ACfFa359A0360392A94233F05B8936BCE9C4bfa'
       contract = Ethereum::Contract.create(name: "Greeting", client: client, address: address, abi: abi)
-      puts 'contract reconnu'
+      puts 'contract ready'
 
-      contract.key = key
-      #puts "greeter.greet: #{contract.call.greet}"
+      contract.key = key # set address for calling the fonction
       #contract.transact_and_wait.greeter("Alex greet the World")
       puts "greeter.greet: #{contract.call.greet}"
 
